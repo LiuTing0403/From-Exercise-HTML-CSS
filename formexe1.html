@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Form Exercise 1</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<form action="/contact" method="post">
+		<fieldset>
+			<h1>Contact</h1>
+			<dl>
+				<dt><label for="first_name">First Name</label></dt>
+				<dd><input type="text" name="first_name" id="first_name"></dd>
+				<dt><label for="last_name">Last Name</label></dt>
+				<dd><input type="text" name="last_name" id="last_name"></dd>
+				<dt><label for="email">Email Address</label></dt>
+				<dd><input type="email" name="email" id="email" autocomplete="off" autocorrect="off" autocapitalize="off"></dd>
+				<dt><label for="phone">Phone Number</label></dt>
+				<dd><input type="tel" name="phone" id="phone"></dd>
+				<dt><label for="phone_type">Phone Type</label></dt>
+				<dd>
+				<select name="phone_type" id="phone_type">
+				<option value="home">home</option>
+				<option value="business">business</option>
+				<option value="mobile">mobile</option>
+				</select>
+				</dd>
+			</dl>
+			
+			<input type="submit" value="Send">
+			
+		</fieldset>
+	</form>
+	<form action="" method="get">
+		<fieldset>
+			<dl>
+				<dt><label for="category">Categories</label></dt>
+				<dd>
+					<label><input type="radio" name="category" value="core">Core</label>
+					<label><input type="radio" name="category" value="plugin">Plugins and Libraries</label>
+					<label><input type="radio" name="category" value="conventions">Conventions</label>
+					<label><input type="radio" name="category" value="reviews">Reviews</label>
+					<label><input type="radio" name="category" value="opinion">Opinion</label>
+					<label><input type="radio" name="category" value="people">People</label>
+				</dd>
+				<dt><label for="tag">Tags</label></dt>
+				<dd>
+					<label><input type="checkbox" name="html" value="html">HTML</label>
+					<label><input type="checkbox" name="css" value="css">CSS</label>
+					<label><input type="checkbox" name="javascript" value="javascript">Javascript</label>
+					<label><input type="checkbox" name="ruby" value="ruby">Ruby</label>
+					<label><input type="checkbox" name="rails" value="rails">Rails</label>
+					<label><input type="checkbox" name="python" value="python">Python</label>
+					<label><input type="checkbox" name="djago" value="djago">Djago</label>
+				</dd>
+
+			</dl>
+			<input type="submit" value="Filter">
+		</fieldset>
+	</form>
+	<form action="" method="get">
+		<fieldset>
+			<h1>Categories</h1>
+			<select name="category" id="category">
+				<option value="core">Core</option>
+				<option value="plugin">Plugins and Libraries</option>
+				<option value="conventions">Conventions</option>
+				<option value="reviews">Reviews</option>
+				<option value="opinion">Opinion</option>
+				<option value="people">People</option>
+			</select>
+			<h1>Tags</h1>
+			<select name="tag" id="tag" multiple>
+				<option value="html">HTML</option>
+				<option value="css">CSS</option>
+				<option value="javascript">Javascript</option>
+				<option value="ruby">Ruby</option>
+				<option value="rails">Rails</option>
+				<option value="python">Python</option>
+				<option value="djago">Djago</option>
+			</select>
+			<input type="submit" value="Filter">
+			<input type="reset" name="reset">
+		</fieldset>
+	</form>
+
+</body>
+</html>
